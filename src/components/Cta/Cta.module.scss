@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+    margin: 4rem;
+    color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--gradient-bar);
+
+    @media screen and (max-width: 40.625em) {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 40.625em) {
+        margin: 4rem 2rem;
+        padding: 2rem 1rem;
+    }
+}
+
+.content {
+    flex: 1;
+
+    p {
+        font-weight: 500;
+        color: #0e0e0e;
+        font-size: 0.75rem;
+        line-height: 1.875rem;
+
+        @media screen and (max-width: 34.375rem) {
+            text-align: center;
+        }
+    }
+
+    h3 {
+        color: #000000;
+        font-weight: 800;
+        font-size: 1.5rem;
+        line-height: 2.8125rem;
+
+        @media screen and (max-width: 40.625em) {
+            line-height: 2rem;
+        }
+
+        @media screen and (max-width: 34.375rem) {
+            font-size: 1.125rem;
+            text-align: center;
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    margin-left: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 65.625em) {
+        margin: 0;
+    }
+
+    @media screen and (max-width: 40.625em) {
+        margin: 2rem 0 0;
+    }
+
+    @media screen and (max-width: 34.375rem) {
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+    }
+
+    button {
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-family: inherit;
+        line-height: 1.875rem;
+        border-radius: 2.5rem;
+        padding: 0.8rem 2.5rem;
+        background-color: #000000;
+    }
+}

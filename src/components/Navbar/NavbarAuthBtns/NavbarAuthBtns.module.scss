@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 43.75em) {
+        display: none;
+    }
+
+    button {
+        color: #ffffff;
+        font-weight: 500;
+        font-size: 1.125rem;
+        font-family: inherit;
+        line-height: 1.5625rem;
+    }
+}
+
+.btn_1 {
+    margin: 0 1.5rem 0 0;
+    background-color: transparent !important;
+}
+
+.btn_2 {
+    margin: 0;
+    padding: 0.9rem 2.5rem;
+    border-radius: 0.3125rem;
+    background-color: #ff4820;
+
+    @media screen and (max-width: 43.75em) {
+        padding: 0.5rem 1rem;
+    }
+}

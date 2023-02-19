@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--color-footer);
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h1 {
+        font-weight: 800;
+        text-align: center;
+        font-size: 3.875rem;
+        line-height: 4.6875rem;
+        letter-spacing: -0.04em;
+
+        @media screen and (max-width: 53.125em) {
+            font-size: 2.75rem;
+            line-height: 3.125rem;
+        }
+
+        @media screen and (max-width: 34.375em) {
+            font-size: 2.125rem;
+            line-height: 2.625rem;
+        }
+
+        @media screen and (max-width: 25em) {
+            font-size: 1.6875rem;
+            line-height: 2.375rem;
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10rem;
+    justify-content: center;
+
+    button {
+        color: #ffffff;
+        font-size: 1.125rem;
+        font-family: inherit;
+        word-spacing: 0.125rem;
+        padding: 1.3rem 1.2rem;
+        line-height: 1.3125rem;
+        border: 1px solid #ffffff;
+    }
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    & > * {
+        margin: 1rem;
+        width: 15.625rem;
+
+        @media screen and (max-width: 34.375em) {
+            margin: 1rem 0;
+        }
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 7.375rem;
+        height: 1.875rem;
+    }
+
+    p {
+        color: #ffffff;
+        text-align: left;
+        font-size: 0.75rem;
+        margin-top: 1.4rem;
+        letter-spacing: 0em;
+        line-height: 0.875rem;
+    }
+}
+
+.quick_links {
+    margin-bottom: 1rem;
+
+    h4 {
+        color: #ffffff;
+        text-align: left;
+        line-height: 1rem;
+        font-size: 0.875rem;
+        margin-bottom: 0.9rem;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            a:link,
+            a:visited,
+            button {
+                display: block;
+                color: #ffffff;
+                text-align: left;
+                font-size: 0.75rem;
+                line-height: 0.875rem;
+            }
+
+            a:link,
+            a:visited {
+                margin: 1.4rem 0;
+            }
+
+            button {
+                margin: 1.4rem 0;
+                font-family: inherit;
+            }
+        }
+    }
+}
+
+.copyright {
+    width: 100%;
+    margin-top: 4rem;
+
+    p {
+        color: #ffffff;
+        font-size: 0.75rem;
+        text-align: center;
+        line-height: 0.875rem;
+        font-feature-settings: "liga" off;
+    }
+}

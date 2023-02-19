@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 61.875rem) {
+        flex-direction: column;
+    }
+}
+
+.heading {
+    flex: 1;
+    display: flex;
+    text-align: left;
+    margin-right: 5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 61.875rem) {
+        margin: 0 0 2rem 0;
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 2.125rem;
+        line-height: 2.8125rem;
+
+        @media screen and (max-width: 34.375rem) {
+            font-size: 1.75rem;
+            line-height: 2.375rem;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        color: #ff8a71;
+        font-weight: 500;
+        margin-top: 2rem;
+        line-height: 1.875rem;
+    }
+}
+
+.wrapper {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    > div {
+        & > *:last-child {
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+
+    @media screen and (max-width: 65.625em) {
+        flex-direction: column;
+    }
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    margin-right: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @media screen and (max-width: 65.625em) {
+        margin: 0 0 3rem;
+    }
+
+    h1 {
+        font-weight: 800;
+        font-size: 3.875rem;
+        line-height: 4.6875rem;
+        letter-spacing: -0.04em;
+
+        @media screen and (max-width: 40.625em) {
+            font-size: 3rem;
+            line-height: 3.75rem;
+        }
+
+        @media screen and (max-width: 30.625em) {
+            font-size: 2.25rem;
+            line-height: 3rem;
+        }
+
+        + p {
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            line-height: 1.6875rem;
+            color: var(--color-text);
+
+            @media screen and (max-width: 40.625em) {
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+            @media screen and (max-width: 30.625em) {
+                font-size: 0.875rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}
+
+.input_container {
+    width: 100%;
+    display: flex;
+    margin: 2rem 0 1rem;
+
+    input {
+        flex: 2;
+        width: 100%;
+        padding: 0 1rem;
+        color: #3d6184;
+        color: #ffffff;
+        font-size: 1.25rem;
+        font-family: inherit;
+        min-height: 4.5625rem;
+        background-color: #052d56;
+        border: 0.125rem solid #052d56;
+        border-radius: 0.3125rem 0 0 0.3125rem;
+
+        &::-webkit-input-placeholder {
+            color: #3d6184;
+        }
+    }
+
+    button {
+        flex: 0.6;
+        width: 100%;
+        padding: 0 1rem;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.25rem;
+        font-family: inherit;
+        min-height: 4.5625rem;
+        background: #ff4820;
+        line-height: 1.6875rem;
+        border-top-right-radius: 0.3125rem;
+        border-bottom-right-radius: 0.3125rem;
+
+        @media screen and (max-width: 34.375em) {
+            flex: 1;
+        }
+    }
+
+    input,
+    button {
+        @media screen and (max-width: 40.625em) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        @media screen and (max-width: 30.625em) {
+            line-height: 1rem;
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.users {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (max-width: 40.625em) {
+        flex-direction: column;
+    }
+
+    img {
+        height: 2.375rem;
+        width: 11.361875rem;
+    }
+
+    p {
+        color: #ffffff;
+        font-weight: 500;
+        text-align: left;
+        margin-left: 1rem;
+        font-size: 0.75rem;
+        letter-spacing: 0em;
+        line-height: 2.375rem;
+
+        @media screen and (max-width: 40.625em) {
+            margin: 0;
+        }
+    }
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
